@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package pe.edu.pucp.proyectocitasdental;
+import java.util.*;
 
 public class CitasDentales {
 
@@ -11,6 +12,7 @@ public class CitasDentales {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Mensaje de prueba");
     }
     
 }
