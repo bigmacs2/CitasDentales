@@ -5,5 +5,5 @@
 package pe.edu.pucp.proyectocitasdental.citas;
 
 public class Maquina {
-    //Maquinaria 
+    
 }
