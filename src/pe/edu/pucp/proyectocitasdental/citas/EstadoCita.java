@@ -5,5 +5,5 @@
 package pe.edu.pucp.proyectocitasdental.citas;
 
 public enum EstadoCita {
-    
+    REPROGRAMADA, CANCELADA, EN_TIEMPO, EN_PROCESO
 }
