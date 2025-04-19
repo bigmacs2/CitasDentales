@@ -6,7 +6,7 @@ package pe.edu.pucp.proyectocitasdental.reportes;
 import pe.edu.pucp.proyectocitasdental.reportes.Ireporte;
 import java.util.*;
 
-public class Reporte implements Ireporte {
+public abstract class Reporte implements Ireporte {
 
     /**
      * @return the id_reporte
@@ -63,9 +63,20 @@ public class Reporte implements Ireporte {
     public void setPeriodo(String periodo) {
         this.periodo = periodo;
     }
+    private static int correlativo = 0;
     private int id_reporte;
     private String tipo;
     private Date fecha_generacion;
     private String periodo;
+    
+    public Reporte(String tipo, Date fecha_generacion, String periodo){
+        correlativo++;
+        this.id_reporte=correlativo;
+        this.tipo=tipo;
+        this.fecha_generacion=fecha_generacion;
+    }
+    
+    
+    public abstract String devolverReporte();
     
 }
