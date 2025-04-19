@@ -7,62 +7,6 @@ import java.util.*;
 import pe.edu.pucp.proyectocitasdental.usuarios.Usuario;
 
 public class Paciente extends Usuario {
-
-    /**
-     * @return the id_paciente
-     */
-    public String getId_paciente() {
-        return id_paciente;
-    }
-
-    /**
-     * @param id_paciente the id_paciente to set
-     */
-    public void setId_paciente(String id_paciente) {
-        this.id_paciente = id_paciente;
-    }
-
-    /**
-     * @return the direccion
-     */
-    public String getDireccion() {
-        return direccion;
-    }
-
-    /**
-     * @param direccion the direccion to set
-     */
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    /**
-     * @return the alergias
-     */
-    public ArrayList<String> getAlergias() {
-        return alergias;
-    }
-
-    /**
-     * @param alergias the alergias to set
-     */
-    public void setAlergias(ArrayList<String> alergias) {
-        this.alergias = alergias;
-    }
-
-    /**
-     * @return the seguro_dental
-     */
-    public Boolean getSeguro_dental() {
-        return seguro_dental;
-    }
-
-    /**
-     * @param seguro_dental the seguro_dental to set
-     */
-    public void setSeguro_dental(Boolean seguro_dental) {
-        this.seguro_dental = seguro_dental;
-    }
     
     private String id_paciente;
     private String direccion;
