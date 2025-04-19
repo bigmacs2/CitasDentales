@@ -4,6 +4,8 @@
  */
 package pe.edu.pucp.proyectocitasdental;
 import java.util.*;
+import java.time.*;
+import pe.edu.pucp.proyectocitasdental.usuarios.*;
 
 public class CitasDentales {
 
@@ -13,6 +15,8 @@ public class CitasDentales {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Mensaje de prueba");
+        //Paciente paciente = new Paciente("","",1,2,"@",
+        //        LocalDate.now(),LocalDate.now(),LocalDate.now(), true);
     }
     
 }

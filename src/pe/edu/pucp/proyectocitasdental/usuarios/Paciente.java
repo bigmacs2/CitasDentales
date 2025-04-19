@@ -3,7 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.proyectocitasdental.usuarios;
+import java.util.*;
+import pe.edu.pucp.proyectocitasdental.usuarios.Usuario;
 
 public class Paciente extends Usuario {
     
+    private String id_paciente;
+    private String direccion;
+    private ArrayList<String> alergias;
+    private Boolean seguro_dental;
+
+    public Paciente(String nombres, String apellidos, int dni, int telefono, 
+                    String email, Date fecha_registro, Date fecha_nacimiento, 
+                    Date ultimo_acceso, Boolean activo, String direccion, 
+                    ArrayList<String> alergias, Boolean seguro_dental) {
+        super(nombres, apellidos, dni, telefono, email, fecha_registro, 
+              fecha_nacimiento, ultimo_acceso, activo);
+        this.id_paciente=String.format("PAC%d", super.getId_usuario());
+        this.direccion=direccion;
+        this.alergias=alergias;
+        this.seguro_dental=seguro_dental;
+    }
 }
