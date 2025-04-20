@@ -92,60 +92,33 @@ public abstract class Usuario {
     }
 
     /**
-     * @return the fecha_registro
+     * @return the direccion
      */
-    public Date getFecha_registro() {
-        return fecha_registro;
+    public String getDireccion() {
+        return direccion;
     }
 
     /**
-     * @param fecha_registro the fecha_registro to set
+     * @param direccion the direccion to set
      */
-    public void setFecha_registro(Date fecha_registro) {
-        this.fecha_registro = fecha_registro;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     /**
-     * @return the fecha_nacimiento
+     * @return the sexo
      */
-    public Date getFecha_nacimiento() {
-        return fecha_nacimiento;
+    public char getSexo() {
+        return sexo;
     }
 
     /**
-     * @param fecha_nacimiento the fecha_nacimiento to set
+     * @param sexo the sexo to set
      */
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
     }
 
-    /**
-     * @return the ultimo_acceso
-     */
-    public Date getUltimo_acceso() {
-        return ultimo_acceso;
-    }
-
-    /**
-     * @param ultimo_acceso the ultimo_acceso to set
-     */
-    public void setUltimo_acceso(Date ultimo_acceso) {
-        this.ultimo_acceso = ultimo_acceso;
-    }
-
-    /**
-     * @return the activo
-     */
-    public Boolean getActivo() {
-        return activo;
-    }
-
-    /**
-     * @param activo the activo to set
-     */
-    public void setActivo(Boolean activo) {
-        this.activo = activo;
-    }
     private static int num_correlativo = 0;
     private int id_usuario;
     private String nombres;
@@ -153,14 +126,14 @@ public abstract class Usuario {
     private int dni;
     private int telefono;
     private String email;
-    private Date fecha_registro;
+    private String direccion;
     private Date fecha_nacimiento;
-    private Date ultimo_acceso;
-    private Boolean activo;
+    private char sexo;
+
     
     public Usuario(String nombres, String apellidos, int dni, int telefono,
-                   String email, Date fecha_registro, Date fecha_nacimiento,
-                   Date ultimo_acceso, Boolean activo){
+                   String email, String direccion, Date fecha_nacimiento,
+                   char sexo){
         num_correlativo++;
         this.id_usuario=num_correlativo;
         this.nombres=nombres;
@@ -168,11 +141,14 @@ public abstract class Usuario {
         this.dni=dni;
         this.telefono=telefono;
         this.email=email;
-        this.fecha_registro=fecha_registro;
+        this.direccion=direccion;
         this.fecha_nacimiento=fecha_nacimiento;
-        this.ultimo_acceso=ultimo_acceso;
-        this.activo=activo;
+        this.sexo=sexo;
     }
+
+    
+
+    
     
 }
 

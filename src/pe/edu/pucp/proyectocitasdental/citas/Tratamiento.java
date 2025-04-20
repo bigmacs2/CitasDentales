@@ -61,6 +61,7 @@ public class Tratamiento {
     private String nombre;
     private String descripcion;
     private double costo_base;
+    //enum tipo
     
     public Tratamiento(String nombre, String descripcion, double costo_base){
         correlativo++;
