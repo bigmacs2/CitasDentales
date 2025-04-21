@@ -3,15 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.proyectocitasdental.citas;
-
 import java.util.*;
+import pe.edu.pucp.proyectocitasdental.usuarios.*; 
 
 public class Cita {
 
     /**
      * @return the id_cita
      */
-    public int getId_cita() {
+    public String getId_cita() {
         return id_cita;
     }
 
@@ -27,20 +27,6 @@ public class Cita {
      */
     public void setFecha_y_hora(Date fecha_y_hora) {
         this.fecha_y_hora = fecha_y_hora;
-    }
-
-    /**
-     * @return the motivo
-     */
-    public String getMotivo() {
-        return motivo;
-    }
-
-    /**
-     * @param motivo the motivo to set
-     */
-    public void setMotivo(String motivo) {
-        this.motivo = motivo;
     }
 
     /**
@@ -99,25 +85,32 @@ public class Cita {
         this.monto = monto;
     }
     private static int num_correlativo = 0;
-    private int id_cita;
-    private Date fecha_y_hora;
-    private String motivo;
+    private String id_cita;
+    private Paciente paciente;
+    private Odontologo odontologo;
+    private Date fecha_y_hora;//investigar datetime
     private String observaciones;
     private EstadoCita estado;
     private Boolean pago_realizado;
+    private Tratamiento tratamiento;
     private double monto;
+    private int duracion;//en minutos
+    //enum metodo de pago
     
-    public Cita(Date fecha_y_hora, String motivo, 
-            String observaciones, EstadoCita estado, Boolean pago_realizado, 
-            double monto){
+    public Cita(Paciente paciente, Odontologo odontologo, Date fecha_y_hora, 
+            Tratamiento tratamiento, int duracion, String observaciones){
+        
         num_correlativo++;
-        this.id_cita=num_correlativo;
+        this.id_cita=String.format("CIT%d", num_correlativo);
+        this.paciente=paciente;
+        this.odontologo=odontologo;
         this.fecha_y_hora=fecha_y_hora;
-        this.motivo=motivo;
+        this.tratamiento=tratamiento;
+        this.duracion=duracion;
         this.observaciones=observaciones;
-        this.estado=estado;
-        this.pago_realizado=pago_realizado;
-        this.monto=monto;
+        this.estado=EstadoCita.PENDIENTE;
+        this.pago_realizado=false;
+        this.monto=tratamiento.getCosto_base();
     }
     
 }

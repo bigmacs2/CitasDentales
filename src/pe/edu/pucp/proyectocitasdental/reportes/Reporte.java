@@ -25,15 +25,15 @@ public abstract class Reporte implements Ireporte {
     /**
      * @return the tipo
      */
-    public String getTipo() {
-        return tipo;
+    public TipoReporte getTipo() {
+        return tipo_reporte;
     }
 
     /**
      * @param tipo the tipo to set
      */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setTipo(TipoReporte tipo) {
+        this.tipo_reporte = tipo;
     }
 
     /**
@@ -65,14 +65,14 @@ public abstract class Reporte implements Ireporte {
     }
     private static int correlativo = 0;
     private int id_reporte;
-    private String tipo;
+    private TipoReporte tipo_reporte;//ENUM
     private Date fecha_generacion;
     private String periodo;
     
-    public Reporte(String tipo, Date fecha_generacion, String periodo){
+    public Reporte(TipoReporte tipo_reporte, Date fecha_generacion, String periodo){
         correlativo++;
         this.id_reporte=correlativo;
-        this.tipo=tipo;
+        this.tipo_reporte=tipo_reporte;
         this.fecha_generacion=fecha_generacion;
     }
     

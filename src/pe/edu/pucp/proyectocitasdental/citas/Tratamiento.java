@@ -9,9 +9,23 @@ import java.util.*;
 public class Tratamiento {
 
     /**
+     * @return the tipo_tratamiento
+     */
+    public TipoTratamiento getTipo_tratamiento() {
+        return tipo_tratamiento;
+    }
+
+    /**
+     * @param tipo_tratamiento the tipo_tratamiento to set
+     */
+    public void setTipo_tratamiento(TipoTratamiento tipo_tratamiento) {
+        this.tipo_tratamiento = tipo_tratamiento;
+    }
+
+    /**
      * @return the id_tratamiento
      */
-    public int getId_tratamiento() {
+    public String getId_tratamiento() {
         return id_tratamiento;
     }
 
@@ -56,19 +70,25 @@ public class Tratamiento {
     public void setCosto_base(double costo_base) {
         this.costo_base = costo_base;
     }
+    
     private static int correlativo=0;
-    private int id_tratamiento;
+    private String id_tratamiento;
     private String nombre;
     private String descripcion;
     private double costo_base;
+    private TipoTratamiento tipo_tratamiento;
     
-    public Tratamiento(String nombre, String descripcion, double costo_base){
+    public Tratamiento(String nombre, String descripcion, double costo_base,
+                       TipoTratamiento tipo_tratamiento){
         correlativo++;
-        this.id_tratamiento=correlativo;
+        this.id_tratamiento=String.format("TRAT%d", correlativo);
         this.nombre=nombre;
         this.descripcion=descripcion;
         this.costo_base=costo_base;
+        this.tipo_tratamiento=tipo_tratamiento;
     }
     
-    
+    public void tratamiento_mas_demandado(){
+        
+    }
 }

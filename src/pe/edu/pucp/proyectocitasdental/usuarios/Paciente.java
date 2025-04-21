@@ -23,20 +23,6 @@ public class Paciente extends Usuario {
     }
 
     /**
-     * @return the direccion
-     */
-    public String getDireccion() {
-        return direccion;
-    }
-
-    /**
-     * @param direccion the direccion to set
-     */
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    /**
      * @return the alergias
      */
     public ArrayList<String> getAlergias() {
@@ -50,34 +36,20 @@ public class Paciente extends Usuario {
         this.alergias = alergias;
     }
 
-    /**
-     * @return the seguro_dental
-     */
-    public Boolean getSeguro_dental() {
-        return seguro_dental;
-    }
-
-    /**
-     * @param seguro_dental the seguro_dental to set
-     */
-    public void setSeguro_dental(Boolean seguro_dental) {
-        this.seguro_dental = seguro_dental;
-    }
-    
+   
     private String id_paciente;
-    private String direccion;
     private ArrayList<String> alergias;
-    private Boolean seguro_dental;
+    private ArrayList<String> condiciones_previas;
+   
 
     public Paciente(String nombres, String apellidos, int dni, int telefono, 
-                    String email, Date fecha_registro, Date fecha_nacimiento, 
-                    Date ultimo_acceso, Boolean activo, String direccion, 
-                    ArrayList<String> alergias, Boolean seguro_dental) {
-        super(nombres, apellidos, dni, telefono, email, fecha_registro, 
-              fecha_nacimiento, ultimo_acceso, activo);
-        this.id_paciente=String.format("PAC%d", super.getId_usuario());
-        this.direccion=direccion;
+                    String email, String direccion, Date fecha_nacimiento, 
+                    char sexo, ArrayList<String> alergias,ArrayList<String>condiciones_previas) {
+        super(nombres, apellidos, dni, telefono, email, direccion, 
+              fecha_nacimiento, sexo);
+        this.id_paciente=String.format("PAC%2d", super.getId_usuario());//PAC01
         this.alergias=alergias;
-        this.seguro_dental=seguro_dental;
+        this.condiciones_previas=condiciones_previas;
+        
     }
 }

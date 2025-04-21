@@ -4,6 +4,10 @@
  */
 package pe.edu.pucp.proyectocitasdental.citas;
 
-public enum EstadoCita {
-    PENDIENTE, CANCELADA, COMPLETADA
+/**
+ *
+ * @author JUAN
+ */
+public enum TipoMaquina {
+    RAYOS_X, ULTRASONIDO_DENTAL, LOCALIZADOR_APICAL
 }
