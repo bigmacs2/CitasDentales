@@ -85,11 +85,9 @@ public class Cita {
         this.monto = monto;
     }
     private static int num_correlativo = 0;
-<<<<<<< HEAD
+
     private String id_cita;
-=======
-    private int id_cita;
->>>>>>> origin/main
+
     private Paciente paciente;
     private Odontologo odontologo;
     private Date fecha_y_hora;//investigar datetime
@@ -105,11 +103,9 @@ public class Cita {
             Tratamiento tratamiento, int duracion, String observaciones){
         
         num_correlativo++;
-<<<<<<< HEAD
+
         this.id_cita=String.format("CIT%d", num_correlativo);
-=======
-        this.id_cita=num_correlativo;
->>>>>>> origin/main
+
         this.paciente=paciente;
         this.odontologo=odontologo;
         this.fecha_y_hora=fecha_y_hora;

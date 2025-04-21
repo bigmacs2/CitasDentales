@@ -65,11 +65,10 @@ public abstract class Reporte implements Ireporte {
     }
     private static int correlativo = 0;
     private int id_reporte;
-<<<<<<< HEAD
+
     private TipoReporte tipo_reporte;//ENUM
-=======
     private String tipo;//ENUM
->>>>>>> origin/main
+
     private Date fecha_generacion;
     private String periodo;
     

@@ -35,11 +35,4 @@ public class JefeOdontologico extends Usuario {
         this.id_jefe_odontologico=String.format("JEFEODN%d", super.getId_usuario());
         this.turno=turno;
     }
-    
-    
-    
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main
