@@ -76,7 +76,11 @@ public class Tratamiento {
     private String nombre;
     private String descripcion;
     private double costo_base;
+<<<<<<< HEAD
     private TipoTratamiento tipo_tratamiento;
+=======
+    //enum tipo
+>>>>>>> origin/main
     
     public Tratamiento(String nombre, String descripcion, double costo_base,
                        TipoTratamiento tipo_tratamiento){

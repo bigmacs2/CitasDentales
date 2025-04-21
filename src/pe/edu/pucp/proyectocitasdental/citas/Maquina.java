@@ -10,11 +10,19 @@ public class Maquina {
     private String id_maquina;
     private String nombre;
     private Date ultima_revision;
+<<<<<<< HEAD
     private EstadoMaquina estado_maquina;
     private TipoMaquina tipo_maquina;
     
     public Maquina(String nombre,Date ultima_revision, 
             EstadoMaquina estado_maquina, TipoMaquina tipo_maquina){
+=======
+    private Estado_Maquina estado_maquina;
+    private Tipo_Maquina tipo_maquina;
+    
+    public Maquina(String nombre,Date ultima_revision, 
+            Estado_Maquina estado_maquina, Tipo_Maquina tipo_maquina){
+>>>>>>> origin/main
         correlativo++;
         this.id_maquina=String.format("MAQ%d", correlativo);
         this.nombre=nombre;

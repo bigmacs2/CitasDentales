@@ -17,6 +17,7 @@ public class CitasDentales {
         System.out.println("Mensaje de prueba");
         //Paciente paciente = new Paciente("","",1,2,"@",
         //        LocalDate.now(),LocalDate.now(),LocalDate.now(), true);
+       
     }
     
 }
