@@ -1,0 +1,74 @@
+﻿body {
+    background-color: #f3f4f6;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recovery-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+    .recovery-card img {
+        max-height: 60px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    .recovery-card h5 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .recovery-card p {
+        font-size: 15px;
+        margin-bottom: 25px;
+        color: #4b5563;
+    }
+
+.btn-primary {
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 8px;
+}
+
+    .btn-primary:hover {
+        background-color: #4338ca;
+    }
+
+.link-back {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+    .link-back:hover {
+        color: #4338ca;
+        text-decoration: none;
+    }
+
+.footer-note {
+    font-size: 12px;
+    margin-top: 30px;
+    color: #9ca3af;
+}
+
+.form-control:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+}
