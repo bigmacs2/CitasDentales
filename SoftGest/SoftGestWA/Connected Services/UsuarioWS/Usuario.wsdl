@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Usuario" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Usuario?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerPorIdUsuario">
+    <part name="parameters" element="tns:obtenerPorIdUsuario" />
+  </message>
+  <message name="obtenerPorIdUsuarioResponse">
+    <part name="parameters" element="tns:obtenerPorIdUsuarioResponse" />
+  </message>
+  <message name="insertarUsuario">
+    <part name="parameters" element="tns:insertarUsuario" />
+  </message>
+  <message name="insertarUsuarioResponse">
+    <part name="parameters" element="tns:insertarUsuarioResponse" />
+  </message>
+  <message name="modificarUsuario">
+    <part name="parameters" element="tns:modificarUsuario" />
+  </message>
+  <message name="modificarUsuarioResponse">
+    <part name="parameters" element="tns:modificarUsuarioResponse" />
+  </message>
+  <message name="eliminarUsuario">
+    <part name="parameters" element="tns:eliminarUsuario" />
+  </message>
+  <message name="eliminarUsuarioResponse">
+    <part name="parameters" element="tns:eliminarUsuarioResponse" />
+  </message>
+  <message name="listarTodosUsuario">
+    <part name="parameters" element="tns:listarTodosUsuario" />
+  </message>
+  <message name="listarTodosUsuarioResponse">
+    <part name="parameters" element="tns:listarTodosUsuarioResponse" />
+  </message>
+  <portType name="Usuario">
+    <operation name="obtenerPorIdUsuario">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/obtenerPorIdUsuarioRequest" message="tns:obtenerPorIdUsuario" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/obtenerPorIdUsuarioResponse" message="tns:obtenerPorIdUsuarioResponse" />
+    </operation>
+    <operation name="insertarUsuario">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/insertarUsuarioRequest" message="tns:insertarUsuario" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/insertarUsuarioResponse" message="tns:insertarUsuarioResponse" />
+    </operation>
+    <operation name="modificarUsuario">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/modificarUsuarioRequest" message="tns:modificarUsuario" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/modificarUsuarioResponse" message="tns:modificarUsuarioResponse" />
+    </operation>
+    <operation name="eliminarUsuario">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
+    </operation>
+    <operation name="listarTodosUsuario">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/listarTodosUsuarioRequest" message="tns:listarTodosUsuario" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Usuario/listarTodosUsuarioResponse" message="tns:listarTodosUsuarioResponse" />
+    </operation>
+  </portType>
+  <binding name="UsuarioPortBinding" type="tns:Usuario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerPorIdUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Usuario">
+    <port name="UsuarioPort" binding="tns:UsuarioPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Usuario" />
+    </port>
+  </service>
+</definitions>

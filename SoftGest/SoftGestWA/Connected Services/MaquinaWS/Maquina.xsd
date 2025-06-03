@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarMaquina" type="tns:eliminarMaquina" />
+  <xs:element name="eliminarMaquinaResponse" type="tns:eliminarMaquinaResponse" />
+  <xs:element name="insertarMaquina" type="tns:insertarMaquina" />
+  <xs:element name="insertarMaquinaResponse" type="tns:insertarMaquinaResponse" />
+  <xs:element name="listarTodosMaquina" type="tns:listarTodosMaquina" />
+  <xs:element name="listarTodosMaquinaResponse" type="tns:listarTodosMaquinaResponse" />
+  <xs:element name="modificarMaquina" type="tns:modificarMaquina" />
+  <xs:element name="modificarMaquinaResponse" type="tns:modificarMaquinaResponse" />
+  <xs:element name="obtenerPorIdMaquina" type="tns:obtenerPorIdMaquina" />
+  <xs:element name="obtenerPorIdMaquinaResponse" type="tns:obtenerPorIdMaquinaResponse" />
+  <xs:complexType name="listarTodosMaquina">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:maquinaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="maquinaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="tns:estadoMaquina" />
+      <xs:element minOccurs="0" name="idMaquina" type="xs:int" />
+      <xs:element minOccurs="0" name="marca" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoMaquinaDTO" type="tns:tipoMaquinaDTO" />
+      <xs:element minOccurs="0" name="ultimaRevision" type="tns:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoMaquinaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idTipoMaquinas" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="modificarMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idMaquina" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="ultimaRevision" type="tns:date" />
+      <xs:element minOccurs="0" name="estadoMaquina" type="tns:estadoMaquina" />
+      <xs:element minOccurs="0" name="idTipoMaquina" type="xs:int" />
+      <xs:element minOccurs="0" name="marca" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="ultimaRevision" type="tns:date" />
+      <xs:element minOccurs="0" name="estadoMaquina" type="tns:estadoMaquina" />
+      <xs:element minOccurs="0" name="idTipoMaquina" type="xs:int" />
+      <xs:element minOccurs="0" name="marca" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idMaquina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idMaquina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:maquinaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="estadoMaquina">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Operativa" />
+      <xs:enumeration value="Malograda" />
+      <xs:enumeration value="En_Mantenimiento" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

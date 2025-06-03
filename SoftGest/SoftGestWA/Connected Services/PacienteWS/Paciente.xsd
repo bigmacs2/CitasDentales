@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarPaciente" type="tns:eliminarPaciente" />
+  <xs:element name="eliminarPacienteResponse" type="tns:eliminarPacienteResponse" />
+  <xs:element name="insertarPaciente" type="tns:insertarPaciente" />
+  <xs:element name="insertarPacienteResponse" type="tns:insertarPacienteResponse" />
+  <xs:element name="listarTodosPaciente" type="tns:listarTodosPaciente" />
+  <xs:element name="listarTodosPacienteResponse" type="tns:listarTodosPacienteResponse" />
+  <xs:element name="modificarPaciente" type="tns:modificarPaciente" />
+  <xs:element name="modificarPacienteResponse" type="tns:modificarPacienteResponse" />
+  <xs:element name="obtenerPorIdPaciente" type="tns:obtenerPorIdPaciente" />
+  <xs:element name="obtenerPorIdPacienteResponse" type="tns:obtenerPorIdPacienteResponse" />
+  <xs:complexType name="insertarPaciente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="alergias" type="tns:alergia" />
+      <xs:element minOccurs="0" name="condicionesPrevias" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPacienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPaciente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPaciente" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="alergias" type="tns:alergia" />
+      <xs:element minOccurs="0" name="condicionesPrevias" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPacienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosPaciente">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosPacienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pacienteDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pacienteDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuarioDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="alergias" nillable="true" type="tns:alergia" />
+          <xs:element minOccurs="0" name="condicionesPrevias" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPaciente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPaciente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPacienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPaciente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPaciente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPacienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:pacienteDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="sexo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Masculino" />
+      <xs:enumeration value="Femenino" />
+      <xs:enumeration value="OTRO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="alergia">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Antibioticos" />
+      <xs:enumeration value="Analgesicos" />
+      <xs:enumeration value="Latex" />
+      <xs:enumeration value="Sulfamidas" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

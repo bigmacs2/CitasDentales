@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="JefeOdontologico" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/JefeOdontologico?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarTodosJefeOdontologico">
+    <part name="parameters" element="tns:listarTodosJefeOdontologico" />
+  </message>
+  <message name="listarTodosJefeOdontologicoResponse">
+    <part name="parameters" element="tns:listarTodosJefeOdontologicoResponse" />
+  </message>
+  <message name="obtenerPorIdJefeOdontologico">
+    <part name="parameters" element="tns:obtenerPorIdJefeOdontologico" />
+  </message>
+  <message name="obtenerPorIdJefeOdontologicoResponse">
+    <part name="parameters" element="tns:obtenerPorIdJefeOdontologicoResponse" />
+  </message>
+  <message name="modificarJefeOdontologico">
+    <part name="parameters" element="tns:modificarJefeOdontologico" />
+  </message>
+  <message name="modificarJefeOdontologicoResponse">
+    <part name="parameters" element="tns:modificarJefeOdontologicoResponse" />
+  </message>
+  <message name="insertarJefeOdontologico">
+    <part name="parameters" element="tns:insertarJefeOdontologico" />
+  </message>
+  <message name="insertarJefeOdontologicoResponse">
+    <part name="parameters" element="tns:insertarJefeOdontologicoResponse" />
+  </message>
+  <message name="eliminarJefeOdontologico">
+    <part name="parameters" element="tns:eliminarJefeOdontologico" />
+  </message>
+  <message name="eliminarJefeOdontologicoResponse">
+    <part name="parameters" element="tns:eliminarJefeOdontologicoResponse" />
+  </message>
+  <portType name="JefeOdontologico">
+    <operation name="listarTodosJefeOdontologico">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/listarTodosJefeOdontologicoRequest" message="tns:listarTodosJefeOdontologico" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/listarTodosJefeOdontologicoResponse" message="tns:listarTodosJefeOdontologicoResponse" />
+    </operation>
+    <operation name="obtenerPorIdJefeOdontologico">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/obtenerPorIdJefeOdontologicoRequest" message="tns:obtenerPorIdJefeOdontologico" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/obtenerPorIdJefeOdontologicoResponse" message="tns:obtenerPorIdJefeOdontologicoResponse" />
+    </operation>
+    <operation name="modificarJefeOdontologico">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/modificarJefeOdontologicoRequest" message="tns:modificarJefeOdontologico" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/modificarJefeOdontologicoResponse" message="tns:modificarJefeOdontologicoResponse" />
+    </operation>
+    <operation name="insertarJefeOdontologico">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/insertarJefeOdontologicoRequest" message="tns:insertarJefeOdontologico" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/insertarJefeOdontologicoResponse" message="tns:insertarJefeOdontologicoResponse" />
+    </operation>
+    <operation name="eliminarJefeOdontologico">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/eliminarJefeOdontologicoRequest" message="tns:eliminarJefeOdontologico" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeOdontologico/eliminarJefeOdontologicoResponse" message="tns:eliminarJefeOdontologicoResponse" />
+    </operation>
+  </portType>
+  <binding name="JefeOdontologicoPortBinding" type="tns:JefeOdontologico">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosJefeOdontologico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdJefeOdontologico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarJefeOdontologico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarJefeOdontologico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarJefeOdontologico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="JefeOdontologico">
+    <port name="JefeOdontologicoPort" binding="tns:JefeOdontologicoPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/JefeOdontologico" />
+    </port>
+  </service>
+</definitions>

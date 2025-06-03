@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JefeOdontologico.master.cs" Inherits="SoftGestWA.Views.JefeOdontologico.JefeOdontologico" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <title>Jefe Odontológico - DentaCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap y Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Estilos personalizados -->
+    <link href="~/styles/MasterJefeOdonto.css" rel="stylesheet" />
+
+    <!-- Scripts en el head para asegurar que se carguen antes del contenido -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- ScriptManager -->
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+
+        <!-- Sidebar -->
+        <div class="sidebar shadow-sm">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="/img/Logo.png" alt="Logo DentaCare" class="img-fluid" />
+            </div>
+
+            <!-- Navegación -->
+            <div class="nav-top">
+                <a href="reportes.aspx"><i class="bi bi-bar-chart-line"></i> Reportes</a>
+                <a href="odontologos.aspx" class="active"><i class="bi bi-person-badge"></i> Odontólogos</a>
+                <a href="pacientes.aspx"><i class="bi bi-people"></i> Pacientes</a>
+                <a href="asistentes.aspx"><i class="bi bi-person-lines-fill"></i> Asistentes Mostrador</a>
+                <a href="almacen.aspx"><i class="bi bi-box-seam"></i> Jefe Almacén</a>
+                <a href="tratamientos.aspx"><i class="bi bi-heart-pulse"></i> Tratamientos</a>
+            </div>
+
+            <!-- Botón Salir -->
+            <div class="logout-link">
+                <a href="logout.aspx" class="d-flex align-items-center">
+                    <i class="fa-solid fa-right-from-bracket me-2"></i> Salir
+                </a>
+            </div>
+        </div>
+
+        <!-- Topbar -->
+        <div class="topbar shadow-sm">
+            <a href="#" class="text-dark text-decoration-none"><i class="fa-solid fa-user"></i> Perfil</a>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+
+    <!-- CSS inline básico para el sidebar si MasterJefeOdonto.css no carga -->
+    <style>
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .sidebar .logo-container {
+            margin-bottom: 20px;
+        }
+        .sidebar .nav-top a {
+            display: block;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .sidebar .nav-top a.active {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .sidebar .nav-top a:hover {
+            background-color: #e9ecef;
+        }
+        .sidebar .logout-link a {
+            color: #dc3545;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .sidebar .logout-link a:hover {
+            background-color: #f8d7da;
+        }
+        .topbar {
+            position: fixed;
+            top: 0;
+            left: 250px;
+            right: 0;
+            height: 60px;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dee2e6;
+            z-index: 1000;
+        }
+        .main {
+            margin-left: 250px;
+            padding: 80px 20px 20px;
+            min-height: calc(100vh - 60px);
+        }
+    </style>
+</body>
+</html>

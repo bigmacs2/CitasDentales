@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarJefeOdontologico" type="tns:eliminarJefeOdontologico" />
+  <xs:element name="eliminarJefeOdontologicoResponse" type="tns:eliminarJefeOdontologicoResponse" />
+  <xs:element name="insertarJefeOdontologico" type="tns:insertarJefeOdontologico" />
+  <xs:element name="insertarJefeOdontologicoResponse" type="tns:insertarJefeOdontologicoResponse" />
+  <xs:element name="listarTodosJefeOdontologico" type="tns:listarTodosJefeOdontologico" />
+  <xs:element name="listarTodosJefeOdontologicoResponse" type="tns:listarTodosJefeOdontologicoResponse" />
+  <xs:element name="modificarJefeOdontologico" type="tns:modificarJefeOdontologico" />
+  <xs:element name="modificarJefeOdontologicoResponse" type="tns:modificarJefeOdontologicoResponse" />
+  <xs:element name="obtenerPorIdJefeOdontologico" type="tns:obtenerPorIdJefeOdontologico" />
+  <xs:element name="obtenerPorIdJefeOdontologicoResponse" type="tns:obtenerPorIdJefeOdontologicoResponse" />
+  <xs:complexType name="listarTodosJefeOdontologico">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosJefeOdontologicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:jefeOdontologicoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="jefeOdontologicoDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuarioDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdJefeOdontologico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idJefeOdontologico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdJefeOdontologicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:jefeOdontologicoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarJefeOdontologico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idJefeOdontologico" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarJefeOdontologicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarJefeOdontologico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idJefeOdontologico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarJefeOdontologicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarJefeOdontologico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarJefeOdontologicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="sexo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Masculino" />
+      <xs:enumeration value="Femenino" />
+      <xs:enumeration value="OTRO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

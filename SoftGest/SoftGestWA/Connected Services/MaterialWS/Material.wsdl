@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Material" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Material?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarMaterial">
+    <part name="parameters" element="tns:modificarMaterial" />
+  </message>
+  <message name="modificarMaterialResponse">
+    <part name="parameters" element="tns:modificarMaterialResponse" />
+  </message>
+  <message name="insertarMaterial">
+    <part name="parameters" element="tns:insertarMaterial" />
+  </message>
+  <message name="insertarMaterialResponse">
+    <part name="parameters" element="tns:insertarMaterialResponse" />
+  </message>
+  <message name="eliminarMaterial">
+    <part name="parameters" element="tns:eliminarMaterial" />
+  </message>
+  <message name="eliminarMaterialResponse">
+    <part name="parameters" element="tns:eliminarMaterialResponse" />
+  </message>
+  <message name="obtenerPorIdMaterial">
+    <part name="parameters" element="tns:obtenerPorIdMaterial" />
+  </message>
+  <message name="obtenerPorIdMaterialResponse">
+    <part name="parameters" element="tns:obtenerPorIdMaterialResponse" />
+  </message>
+  <message name="listarTodosMaterial">
+    <part name="parameters" element="tns:listarTodosMaterial" />
+  </message>
+  <message name="listarTodosMaterialResponse">
+    <part name="parameters" element="tns:listarTodosMaterialResponse" />
+  </message>
+  <portType name="Material">
+    <operation name="modificarMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Material/modificarMaterialRequest" message="tns:modificarMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Material/modificarMaterialResponse" message="tns:modificarMaterialResponse" />
+    </operation>
+    <operation name="insertarMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Material/insertarMaterialRequest" message="tns:insertarMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Material/insertarMaterialResponse" message="tns:insertarMaterialResponse" />
+    </operation>
+    <operation name="eliminarMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Material/eliminarMaterialRequest" message="tns:eliminarMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Material/eliminarMaterialResponse" message="tns:eliminarMaterialResponse" />
+    </operation>
+    <operation name="obtenerPorIdMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Material/obtenerPorIdMaterialRequest" message="tns:obtenerPorIdMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Material/obtenerPorIdMaterialResponse" message="tns:obtenerPorIdMaterialResponse" />
+    </operation>
+    <operation name="listarTodosMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Material/listarTodosMaterialRequest" message="tns:listarTodosMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Material/listarTodosMaterialResponse" message="tns:listarTodosMaterialResponse" />
+    </operation>
+  </portType>
+  <binding name="MaterialPortBinding" type="tns:Material">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Material">
+    <port name="MaterialPort" binding="tns:MaterialPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Material" />
+    </port>
+  </service>
+</definitions>

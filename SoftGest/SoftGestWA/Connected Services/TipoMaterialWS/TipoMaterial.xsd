@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarTipoMaterial" type="tns:eliminarTipoMaterial" />
+  <xs:element name="eliminarTipoMaterialResponse" type="tns:eliminarTipoMaterialResponse" />
+  <xs:element name="insertarTipoMaterial" type="tns:insertarTipoMaterial" />
+  <xs:element name="insertarTipoMaterialResponse" type="tns:insertarTipoMaterialResponse" />
+  <xs:element name="listarTodosTipoMaterial" type="tns:listarTodosTipoMaterial" />
+  <xs:element name="listarTodosTipoMaterialResponse" type="tns:listarTodosTipoMaterialResponse" />
+  <xs:element name="modificarTipoMaterial" type="tns:modificarTipoMaterial" />
+  <xs:element name="modificarTipoMaterialResponse" type="tns:modificarTipoMaterialResponse" />
+  <xs:element name="obtenerPorIdTipoMaterial" type="tns:obtenerPorIdTipoMaterial" />
+  <xs:element name="obtenerPorIdTipoMaterialResponse" type="tns:obtenerPorIdTipoMaterialResponse" />
+  <xs:complexType name="modificarTipoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTipoMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTipoMaterialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTipoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTipoMaterial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTipoMaterialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tipoMaterialDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoMaterialDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idTipoMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarTipoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarTipoMaterialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTipoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTipoMaterial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTipoMaterialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosTipoMaterial">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosTipoMaterialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoMaterialDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

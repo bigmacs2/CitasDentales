@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Paciente" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Paciente?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarPaciente">
+    <part name="parameters" element="tns:modificarPaciente" />
+  </message>
+  <message name="modificarPacienteResponse">
+    <part name="parameters" element="tns:modificarPacienteResponse" />
+  </message>
+  <message name="insertarPaciente">
+    <part name="parameters" element="tns:insertarPaciente" />
+  </message>
+  <message name="insertarPacienteResponse">
+    <part name="parameters" element="tns:insertarPacienteResponse" />
+  </message>
+  <message name="eliminarPaciente">
+    <part name="parameters" element="tns:eliminarPaciente" />
+  </message>
+  <message name="eliminarPacienteResponse">
+    <part name="parameters" element="tns:eliminarPacienteResponse" />
+  </message>
+  <message name="obtenerPorIdPaciente">
+    <part name="parameters" element="tns:obtenerPorIdPaciente" />
+  </message>
+  <message name="obtenerPorIdPacienteResponse">
+    <part name="parameters" element="tns:obtenerPorIdPacienteResponse" />
+  </message>
+  <message name="listarTodosPaciente">
+    <part name="parameters" element="tns:listarTodosPaciente" />
+  </message>
+  <message name="listarTodosPacienteResponse">
+    <part name="parameters" element="tns:listarTodosPacienteResponse" />
+  </message>
+  <portType name="Paciente">
+    <operation name="modificarPaciente">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/modificarPacienteRequest" message="tns:modificarPaciente" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/modificarPacienteResponse" message="tns:modificarPacienteResponse" />
+    </operation>
+    <operation name="insertarPaciente">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/insertarPacienteRequest" message="tns:insertarPaciente" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/insertarPacienteResponse" message="tns:insertarPacienteResponse" />
+    </operation>
+    <operation name="eliminarPaciente">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/eliminarPacienteRequest" message="tns:eliminarPaciente" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/eliminarPacienteResponse" message="tns:eliminarPacienteResponse" />
+    </operation>
+    <operation name="obtenerPorIdPaciente">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/obtenerPorIdPacienteRequest" message="tns:obtenerPorIdPaciente" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/obtenerPorIdPacienteResponse" message="tns:obtenerPorIdPacienteResponse" />
+    </operation>
+    <operation name="listarTodosPaciente">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/listarTodosPacienteRequest" message="tns:listarTodosPaciente" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Paciente/listarTodosPacienteResponse" message="tns:listarTodosPacienteResponse" />
+    </operation>
+  </portType>
+  <binding name="PacientePortBinding" type="tns:Paciente">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarPaciente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPaciente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPaciente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdPaciente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosPaciente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Paciente">
+    <port name="PacientePort" binding="tns:PacientePortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Paciente" />
+    </port>
+  </service>
+</definitions>

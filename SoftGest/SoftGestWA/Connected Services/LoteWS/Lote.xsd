@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarLote" type="tns:eliminarLote" />
+  <xs:element name="eliminarLoteResponse" type="tns:eliminarLoteResponse" />
+  <xs:element name="insertarLote" type="tns:insertarLote" />
+  <xs:element name="insertarLoteResponse" type="tns:insertarLoteResponse" />
+  <xs:element name="listarTodoLotes" type="tns:listarTodoLotes" />
+  <xs:element name="listarTodoLotesResponse" type="tns:listarTodoLotesResponse" />
+  <xs:element name="modificarLote" type="tns:modificarLote" />
+  <xs:element name="modificarLoteResponse" type="tns:modificarLoteResponse" />
+  <xs:element name="obtenerPorIdLote" type="tns:obtenerPorIdLote" />
+  <xs:element name="obtenerPorIdLoteResponse" type="tns:obtenerPorIdLoteResponse" />
+  <xs:complexType name="insertarLote">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="idJefeAlmacen" type="xs:int" />
+      <xs:element minOccurs="0" name="stockDisp" type="xs:int" />
+      <xs:element minOccurs="0" name="stockMin" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaVencimiento" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarLoteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarLote">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLote" type="xs:int" />
+      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="idJefeAlmacen" type="xs:int" />
+      <xs:element minOccurs="0" name="stockDisp" type="xs:int" />
+      <xs:element minOccurs="0" name="stockMin" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaVencimiento" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarLoteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdLote">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLote" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdLoteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:loteDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loteDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechaVencimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idLote" type="xs:int" />
+      <xs:element minOccurs="0" name="jefeAlmacenDTO" type="tns:jefeAlmacenDTO" />
+      <xs:element minOccurs="0" name="materialDTO" type="tns:materialDTO" />
+      <xs:element minOccurs="0" name="stockDisponible" type="xs:int" />
+      <xs:element minOccurs="0" name="stockMinimo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="jefeAlmacenDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuarioDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="materialDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechaVencimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="marca" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoMaterialDTO" type="tns:tipoMaterialDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoMaterialDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idTipoMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodoLotes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodoLotesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:loteDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarLote">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idLote" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarLoteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="sexo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Masculino" />
+      <xs:enumeration value="Femenino" />
+      <xs:enumeration value="OTRO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

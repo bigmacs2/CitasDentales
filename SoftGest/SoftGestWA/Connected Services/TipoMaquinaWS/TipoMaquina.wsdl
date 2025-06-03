@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="TipoMaquina" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/TipoMaquina?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarTipoMaquina">
+    <part name="parameters" element="tns:insertarTipoMaquina" />
+  </message>
+  <message name="insertarTipoMaquinaResponse">
+    <part name="parameters" element="tns:insertarTipoMaquinaResponse" />
+  </message>
+  <message name="modificarTipoMaquina">
+    <part name="parameters" element="tns:modificarTipoMaquina" />
+  </message>
+  <message name="modificarTipoMaquinaResponse">
+    <part name="parameters" element="tns:modificarTipoMaquinaResponse" />
+  </message>
+  <message name="obtenerPorIdTipoMaquina">
+    <part name="parameters" element="tns:obtenerPorIdTipoMaquina" />
+  </message>
+  <message name="obtenerPorIdTipoMaquinaResponse">
+    <part name="parameters" element="tns:obtenerPorIdTipoMaquinaResponse" />
+  </message>
+  <message name="listarTodosTipoMaquina">
+    <part name="parameters" element="tns:listarTodosTipoMaquina" />
+  </message>
+  <message name="listarTodosTipoMaquinaResponse">
+    <part name="parameters" element="tns:listarTodosTipoMaquinaResponse" />
+  </message>
+  <message name="eliminarTipoMaquina">
+    <part name="parameters" element="tns:eliminarTipoMaquina" />
+  </message>
+  <message name="eliminarTipoMaquinaResponse">
+    <part name="parameters" element="tns:eliminarTipoMaquinaResponse" />
+  </message>
+  <portType name="TipoMaquina">
+    <operation name="insertarTipoMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/insertarTipoMaquinaRequest" message="tns:insertarTipoMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/insertarTipoMaquinaResponse" message="tns:insertarTipoMaquinaResponse" />
+    </operation>
+    <operation name="modificarTipoMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/modificarTipoMaquinaRequest" message="tns:modificarTipoMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/modificarTipoMaquinaResponse" message="tns:modificarTipoMaquinaResponse" />
+    </operation>
+    <operation name="obtenerPorIdTipoMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/obtenerPorIdTipoMaquinaRequest" message="tns:obtenerPorIdTipoMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/obtenerPorIdTipoMaquinaResponse" message="tns:obtenerPorIdTipoMaquinaResponse" />
+    </operation>
+    <operation name="listarTodosTipoMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/listarTodosTipoMaquinaRequest" message="tns:listarTodosTipoMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/listarTodosTipoMaquinaResponse" message="tns:listarTodosTipoMaquinaResponse" />
+    </operation>
+    <operation name="eliminarTipoMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/eliminarTipoMaquinaRequest" message="tns:eliminarTipoMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaquina/eliminarTipoMaquinaResponse" message="tns:eliminarTipoMaquinaResponse" />
+    </operation>
+  </portType>
+  <binding name="TipoMaquinaPortBinding" type="tns:TipoMaquina">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarTipoMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTipoMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdTipoMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosTipoMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTipoMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoMaquina">
+    <port name="TipoMaquinaPort" binding="tns:TipoMaquinaPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/TipoMaquina" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="AsistenteMostrador" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/AsistenteMostrador?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarTodosAsistenteMostrador">
+    <part name="parameters" element="tns:listarTodosAsistenteMostrador" />
+  </message>
+  <message name="listarTodosAsistenteMostradorResponse">
+    <part name="parameters" element="tns:listarTodosAsistenteMostradorResponse" />
+  </message>
+  <message name="obtenerPorIdAsistenteMostrador">
+    <part name="parameters" element="tns:obtenerPorIdAsistenteMostrador" />
+  </message>
+  <message name="obtenerPorIdAsistenteMostradorResponse">
+    <part name="parameters" element="tns:obtenerPorIdAsistenteMostradorResponse" />
+  </message>
+  <message name="modificarAsistenteMostrador">
+    <part name="parameters" element="tns:modificarAsistenteMostrador" />
+  </message>
+  <message name="modificarAsistenteMostradorResponse">
+    <part name="parameters" element="tns:modificarAsistenteMostradorResponse" />
+  </message>
+  <message name="insertarAsistenteMostrador">
+    <part name="parameters" element="tns:insertarAsistenteMostrador" />
+  </message>
+  <message name="insertarAsistenteMostradorResponse">
+    <part name="parameters" element="tns:insertarAsistenteMostradorResponse" />
+  </message>
+  <message name="eliminarAsistenteMostrador">
+    <part name="parameters" element="tns:eliminarAsistenteMostrador" />
+  </message>
+  <message name="eliminarAsistenteMostradorResponse">
+    <part name="parameters" element="tns:eliminarAsistenteMostradorResponse" />
+  </message>
+  <portType name="AsistenteMostrador">
+    <operation name="listarTodosAsistenteMostrador">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/listarTodosAsistenteMostradorRequest" message="tns:listarTodosAsistenteMostrador" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/listarTodosAsistenteMostradorResponse" message="tns:listarTodosAsistenteMostradorResponse" />
+    </operation>
+    <operation name="obtenerPorIdAsistenteMostrador">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/obtenerPorIdAsistenteMostradorRequest" message="tns:obtenerPorIdAsistenteMostrador" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/obtenerPorIdAsistenteMostradorResponse" message="tns:obtenerPorIdAsistenteMostradorResponse" />
+    </operation>
+    <operation name="modificarAsistenteMostrador">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/modificarAsistenteMostradorRequest" message="tns:modificarAsistenteMostrador" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/modificarAsistenteMostradorResponse" message="tns:modificarAsistenteMostradorResponse" />
+    </operation>
+    <operation name="insertarAsistenteMostrador">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/insertarAsistenteMostradorRequest" message="tns:insertarAsistenteMostrador" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/insertarAsistenteMostradorResponse" message="tns:insertarAsistenteMostradorResponse" />
+    </operation>
+    <operation name="eliminarAsistenteMostrador">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/eliminarAsistenteMostradorRequest" message="tns:eliminarAsistenteMostrador" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/AsistenteMostrador/eliminarAsistenteMostradorResponse" message="tns:eliminarAsistenteMostradorResponse" />
+    </operation>
+  </portType>
+  <binding name="AsistenteMostradorPortBinding" type="tns:AsistenteMostrador">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosAsistenteMostrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdAsistenteMostrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAsistenteMostrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAsistenteMostrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAsistenteMostrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AsistenteMostrador">
+    <port name="AsistenteMostradorPort" binding="tns:AsistenteMostradorPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/AsistenteMostrador" />
+    </port>
+  </service>
+</definitions>
