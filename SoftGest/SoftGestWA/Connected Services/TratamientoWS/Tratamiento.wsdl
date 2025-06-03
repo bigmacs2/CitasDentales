@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Tratamiento" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Tratamiento?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarTratamiento">
+    <part name="parameters" element="tns:modificarTratamiento" />
+  </message>
+  <message name="modificarTratamientoResponse">
+    <part name="parameters" element="tns:modificarTratamientoResponse" />
+  </message>
+  <message name="insertarTratamiento">
+    <part name="parameters" element="tns:insertarTratamiento" />
+  </message>
+  <message name="insertarTratamientoResponse">
+    <part name="parameters" element="tns:insertarTratamientoResponse" />
+  </message>
+  <message name="obtenerPorIdTratamiento">
+    <part name="parameters" element="tns:obtenerPorIdTratamiento" />
+  </message>
+  <message name="obtenerPorIdTratamientoResponse">
+    <part name="parameters" element="tns:obtenerPorIdTratamientoResponse" />
+  </message>
+  <message name="eliminarTratamiento">
+    <part name="parameters" element="tns:eliminarTratamiento" />
+  </message>
+  <message name="eliminarTratamientoResponse">
+    <part name="parameters" element="tns:eliminarTratamientoResponse" />
+  </message>
+  <message name="listarTodosTratamiento">
+    <part name="parameters" element="tns:listarTodosTratamiento" />
+  </message>
+  <message name="listarTodosTratamientoResponse">
+    <part name="parameters" element="tns:listarTodosTratamientoResponse" />
+  </message>
+  <portType name="Tratamiento">
+    <operation name="modificarTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/modificarTratamientoRequest" message="tns:modificarTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/modificarTratamientoResponse" message="tns:modificarTratamientoResponse" />
+    </operation>
+    <operation name="insertarTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/insertarTratamientoRequest" message="tns:insertarTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/insertarTratamientoResponse" message="tns:insertarTratamientoResponse" />
+    </operation>
+    <operation name="obtenerPorIdTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/obtenerPorIdTratamientoRequest" message="tns:obtenerPorIdTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/obtenerPorIdTratamientoResponse" message="tns:obtenerPorIdTratamientoResponse" />
+    </operation>
+    <operation name="eliminarTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/eliminarTratamientoRequest" message="tns:eliminarTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/eliminarTratamientoResponse" message="tns:eliminarTratamientoResponse" />
+    </operation>
+    <operation name="listarTodosTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/listarTodosTratamientoRequest" message="tns:listarTodosTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Tratamiento/listarTodosTratamientoResponse" message="tns:listarTodosTratamientoResponse" />
+    </operation>
+  </portType>
+  <binding name="TratamientoPortBinding" type="tns:Tratamiento">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Tratamiento">
+    <port name="TratamientoPort" binding="tns:TratamientoPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Tratamiento" />
+    </port>
+  </service>
+</definitions>

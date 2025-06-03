@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarTipoMaquina" type="tns:eliminarTipoMaquina" />
+  <xs:element name="eliminarTipoMaquinaResponse" type="tns:eliminarTipoMaquinaResponse" />
+  <xs:element name="insertarTipoMaquina" type="tns:insertarTipoMaquina" />
+  <xs:element name="insertarTipoMaquinaResponse" type="tns:insertarTipoMaquinaResponse" />
+  <xs:element name="listarTodosTipoMaquina" type="tns:listarTodosTipoMaquina" />
+  <xs:element name="listarTodosTipoMaquinaResponse" type="tns:listarTodosTipoMaquinaResponse" />
+  <xs:element name="modificarTipoMaquina" type="tns:modificarTipoMaquina" />
+  <xs:element name="modificarTipoMaquinaResponse" type="tns:modificarTipoMaquinaResponse" />
+  <xs:element name="obtenerPorIdTipoMaquina" type="tns:obtenerPorIdTipoMaquina" />
+  <xs:element name="obtenerPorIdTipoMaquinaResponse" type="tns:obtenerPorIdTipoMaquinaResponse" />
+  <xs:complexType name="eliminarTipoMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTipoMaquina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTipoMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTipoMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTipoMaquina" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTipoMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarTipoMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarTipoMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTipoMaquina">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTipoMaquina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTipoMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tipoMaquinaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoMaquinaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idTipoMaquinas" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosTipoMaquina">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosTipoMaquinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoMaquinaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

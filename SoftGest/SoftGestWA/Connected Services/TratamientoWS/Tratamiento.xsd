@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarTratamiento" type="tns:eliminarTratamiento" />
+  <xs:element name="eliminarTratamientoResponse" type="tns:eliminarTratamientoResponse" />
+  <xs:element name="insertarTratamiento" type="tns:insertarTratamiento" />
+  <xs:element name="insertarTratamientoResponse" type="tns:insertarTratamientoResponse" />
+  <xs:element name="listarTodosTratamiento" type="tns:listarTodosTratamiento" />
+  <xs:element name="listarTodosTratamientoResponse" type="tns:listarTodosTratamientoResponse" />
+  <xs:element name="modificarTratamiento" type="tns:modificarTratamiento" />
+  <xs:element name="modificarTratamientoResponse" type="tns:modificarTratamientoResponse" />
+  <xs:element name="obtenerPorIdTratamiento" type="tns:obtenerPorIdTratamiento" />
+  <xs:element name="obtenerPorIdTratamientoResponse" type="tns:obtenerPorIdTratamientoResponse" />
+  <xs:complexType name="insertarTratamiento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="costo" type="xs:double" />
+      <xs:element name="idFkTipoTratamiento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarTratamientoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTratamiento">
+    <xs:sequence>
+      <xs:element name="idTratamiento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTratamientoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTratamiento">
+    <xs:sequence>
+      <xs:element name="idTratamiento" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="costo" type="xs:double" />
+      <xs:element name="idFkTipoTratamiento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarTratamientoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosTratamiento">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosTratamientoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tratamientoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tratamientoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="costo" type="xs:double" />
+      <xs:element minOccurs="0" name="idTratamiento" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoTratamientoDTO" type="tns:tipoTratamientoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoTratamientoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="idTipoTratamiento" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTratamiento">
+    <xs:sequence>
+      <xs:element name="idTratamiento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdTratamientoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tratamientoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

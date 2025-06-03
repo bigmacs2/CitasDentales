@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Maquina" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Maquina?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarTodosMaquina">
+    <part name="parameters" element="tns:listarTodosMaquina" />
+  </message>
+  <message name="listarTodosMaquinaResponse">
+    <part name="parameters" element="tns:listarTodosMaquinaResponse" />
+  </message>
+  <message name="eliminarMaquina">
+    <part name="parameters" element="tns:eliminarMaquina" />
+  </message>
+  <message name="eliminarMaquinaResponse">
+    <part name="parameters" element="tns:eliminarMaquinaResponse" />
+  </message>
+  <message name="modificarMaquina">
+    <part name="parameters" element="tns:modificarMaquina" />
+  </message>
+  <message name="modificarMaquinaResponse">
+    <part name="parameters" element="tns:modificarMaquinaResponse" />
+  </message>
+  <message name="insertarMaquina">
+    <part name="parameters" element="tns:insertarMaquina" />
+  </message>
+  <message name="insertarMaquinaResponse">
+    <part name="parameters" element="tns:insertarMaquinaResponse" />
+  </message>
+  <message name="obtenerPorIdMaquina">
+    <part name="parameters" element="tns:obtenerPorIdMaquina" />
+  </message>
+  <message name="obtenerPorIdMaquinaResponse">
+    <part name="parameters" element="tns:obtenerPorIdMaquinaResponse" />
+  </message>
+  <portType name="Maquina">
+    <operation name="listarTodosMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/listarTodosMaquinaRequest" message="tns:listarTodosMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/listarTodosMaquinaResponse" message="tns:listarTodosMaquinaResponse" />
+    </operation>
+    <operation name="eliminarMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/eliminarMaquinaRequest" message="tns:eliminarMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/eliminarMaquinaResponse" message="tns:eliminarMaquinaResponse" />
+    </operation>
+    <operation name="modificarMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/modificarMaquinaRequest" message="tns:modificarMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/modificarMaquinaResponse" message="tns:modificarMaquinaResponse" />
+    </operation>
+    <operation name="insertarMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/insertarMaquinaRequest" message="tns:insertarMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/insertarMaquinaResponse" message="tns:insertarMaquinaResponse" />
+    </operation>
+    <operation name="obtenerPorIdMaquina">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/obtenerPorIdMaquinaRequest" message="tns:obtenerPorIdMaquina" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Maquina/obtenerPorIdMaquinaResponse" message="tns:obtenerPorIdMaquinaResponse" />
+    </operation>
+  </portType>
+  <binding name="MaquinaPortBinding" type="tns:Maquina">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdMaquina">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Maquina">
+    <port name="MaquinaPort" binding="tns:MaquinaPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Maquina" />
+    </port>
+  </service>
+</definitions>

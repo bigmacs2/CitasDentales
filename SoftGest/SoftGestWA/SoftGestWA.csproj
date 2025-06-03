@@ -107,6 +107,8 @@
     <Content Include="img\Logo.png" />
     <Content Include="Inicio\Login.aspx" />
     <Content Include="Inicio\Recuperar.aspx" />
+    <Content Include="Perfil\PerfilAsistenteMostrador.aspx" />
+    <Content Include="Perfil\PerfilJefeOdontologico.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -126,8 +128,12 @@
     <Content Include="Scripts\jquery-3.7.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="styles\MasterAsistente.css" />
+    <Content Include="styles\MasterJefeOdonto.css" />
     <Content Include="styles\RecuperarStyles.css" />
     <Content Include="styles\stylesLogin.css" />
+    <Content Include="Views\AsistenteMostrador\Home.aspx" />
+    <Content Include="Views\JefeOdontologico\Odontologos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -145,7 +151,49 @@
     <Compile Include="Inicio\Recuperar.aspx.designer.cs">
       <DependentUpon>Recuperar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Perfil\PerfilAsistenteMostrador.aspx.cs">
+      <DependentUpon>PerfilAsistenteMostrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil\PerfilAsistenteMostrador.aspx.designer.cs">
+      <DependentUpon>PerfilAsistenteMostrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil\PerfilJefeOdontologico.aspx.cs">
+      <DependentUpon>PerfilJefeOdontologico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil\PerfilJefeOdontologico.aspx.designer.cs">
+      <DependentUpon>PerfilJefeOdontologico.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AsistenteMostrador\AsistenteMostrador.Master.cs">
+      <DependentUpon>AsistenteMostrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AsistenteMostrador\AsistenteMostrador.Master.designer.cs">
+      <DependentUpon>AsistenteMostrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AsistenteMostrador\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AsistenteMostrador\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JefeOdontologico\JefeOdontologico.Master.cs">
+      <DependentUpon>JefeOdontologico.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JefeOdontologico\JefeOdontologico.Master.designer.cs">
+      <DependentUpon>JefeOdontologico.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JefeOdontologico\Odontologos.aspx.cs">
+      <DependentUpon>Odontologos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JefeOdontologico\Odontologos.aspx.designer.cs">
+      <DependentUpon>Odontologos.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -173,6 +221,8 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
+    <Content Include="Views\JefeOdontologico\JefeOdontologico.Master" />
+    <Content Include="Views\AsistenteMostrador\AsistenteMostrador.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

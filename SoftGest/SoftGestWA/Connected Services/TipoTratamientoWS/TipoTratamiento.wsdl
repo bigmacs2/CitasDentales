@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="TipoTratamiento" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/TipoTratamiento?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerPorIdTipoTratamiento">
+    <part name="parameters" element="tns:obtenerPorIdTipoTratamiento" />
+  </message>
+  <message name="obtenerPorIdTipoTratamientoResponse">
+    <part name="parameters" element="tns:obtenerPorIdTipoTratamientoResponse" />
+  </message>
+  <message name="insertarTipoTratamiento">
+    <part name="parameters" element="tns:insertarTipoTratamiento" />
+  </message>
+  <message name="insertarTipoTratamientoResponse">
+    <part name="parameters" element="tns:insertarTipoTratamientoResponse" />
+  </message>
+  <message name="eliminarTipoTratamiento">
+    <part name="parameters" element="tns:eliminarTipoTratamiento" />
+  </message>
+  <message name="eliminarTipoTratamientoResponse">
+    <part name="parameters" element="tns:eliminarTipoTratamientoResponse" />
+  </message>
+  <message name="modificarTipoTratamiento">
+    <part name="parameters" element="tns:modificarTipoTratamiento" />
+  </message>
+  <message name="modificarTipoTratamientoResponse">
+    <part name="parameters" element="tns:modificarTipoTratamientoResponse" />
+  </message>
+  <message name="listarTodosTipoTratamiento">
+    <part name="parameters" element="tns:listarTodosTipoTratamiento" />
+  </message>
+  <message name="listarTodosTipoTratamientoResponse">
+    <part name="parameters" element="tns:listarTodosTipoTratamientoResponse" />
+  </message>
+  <portType name="TipoTratamiento">
+    <operation name="obtenerPorIdTipoTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/obtenerPorIdTipoTratamientoRequest" message="tns:obtenerPorIdTipoTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/obtenerPorIdTipoTratamientoResponse" message="tns:obtenerPorIdTipoTratamientoResponse" />
+    </operation>
+    <operation name="insertarTipoTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/insertarTipoTratamientoRequest" message="tns:insertarTipoTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/insertarTipoTratamientoResponse" message="tns:insertarTipoTratamientoResponse" />
+    </operation>
+    <operation name="eliminarTipoTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/eliminarTipoTratamientoRequest" message="tns:eliminarTipoTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/eliminarTipoTratamientoResponse" message="tns:eliminarTipoTratamientoResponse" />
+    </operation>
+    <operation name="modificarTipoTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/modificarTipoTratamientoRequest" message="tns:modificarTipoTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/modificarTipoTratamientoResponse" message="tns:modificarTipoTratamientoResponse" />
+    </operation>
+    <operation name="listarTodosTipoTratamiento">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/listarTodosTipoTratamientoRequest" message="tns:listarTodosTipoTratamiento" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoTratamiento/listarTodosTipoTratamientoResponse" message="tns:listarTodosTipoTratamientoResponse" />
+    </operation>
+  </portType>
+  <binding name="TipoTratamientoPortBinding" type="tns:TipoTratamiento">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerPorIdTipoTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarTipoTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTipoTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTipoTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosTipoTratamiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoTratamiento">
+    <port name="TipoTratamientoPort" binding="tns:TipoTratamientoPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/TipoTratamiento" />
+    </port>
+  </service>
+</definitions>

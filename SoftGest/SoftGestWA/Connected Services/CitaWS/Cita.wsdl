@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Cita" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Cita?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarCita">
+    <part name="parameters" element="tns:eliminarCita" />
+  </message>
+  <message name="eliminarCitaResponse">
+    <part name="parameters" element="tns:eliminarCitaResponse" />
+  </message>
+  <message name="modificarCita">
+    <part name="parameters" element="tns:modificarCita" />
+  </message>
+  <message name="modificarCitaResponse">
+    <part name="parameters" element="tns:modificarCitaResponse" />
+  </message>
+  <message name="obtenerPorIdCita">
+    <part name="parameters" element="tns:obtenerPorIdCita" />
+  </message>
+  <message name="obtenerPorIdCitaResponse">
+    <part name="parameters" element="tns:obtenerPorIdCitaResponse" />
+  </message>
+  <message name="insertarCita">
+    <part name="parameters" element="tns:insertarCita" />
+  </message>
+  <message name="insertarCitaResponse">
+    <part name="parameters" element="tns:insertarCitaResponse" />
+  </message>
+  <message name="listarTodosCita">
+    <part name="parameters" element="tns:listarTodosCita" />
+  </message>
+  <message name="listarTodosCitaResponse">
+    <part name="parameters" element="tns:listarTodosCitaResponse" />
+  </message>
+  <portType name="Cita">
+    <operation name="eliminarCita">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Cita/eliminarCitaRequest" message="tns:eliminarCita" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Cita/eliminarCitaResponse" message="tns:eliminarCitaResponse" />
+    </operation>
+    <operation name="modificarCita">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Cita/modificarCitaRequest" message="tns:modificarCita" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Cita/modificarCitaResponse" message="tns:modificarCitaResponse" />
+    </operation>
+    <operation name="obtenerPorIdCita">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Cita/obtenerPorIdCitaRequest" message="tns:obtenerPorIdCita" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Cita/obtenerPorIdCitaResponse" message="tns:obtenerPorIdCitaResponse" />
+    </operation>
+    <operation name="insertarCita">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Cita/insertarCitaRequest" message="tns:insertarCita" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Cita/insertarCitaResponse" message="tns:insertarCitaResponse" />
+    </operation>
+    <operation name="listarTodosCita">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Cita/listarTodosCitaRequest" message="tns:listarTodosCita" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Cita/listarTodosCitaResponse" message="tns:listarTodosCitaResponse" />
+    </operation>
+  </portType>
+  <binding name="CitaPortBinding" type="tns:Cita">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarCita">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCita">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdCita">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarCita">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosCita">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Cita">
+    <port name="CitaPort" binding="tns:CitaPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Cita" />
+    </port>
+  </service>
+</definitions>

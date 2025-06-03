@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Lote" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/Lote?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarLote">
+    <part name="parameters" element="tns:modificarLote" />
+  </message>
+  <message name="modificarLoteResponse">
+    <part name="parameters" element="tns:modificarLoteResponse" />
+  </message>
+  <message name="insertarLote">
+    <part name="parameters" element="tns:insertarLote" />
+  </message>
+  <message name="insertarLoteResponse">
+    <part name="parameters" element="tns:insertarLoteResponse" />
+  </message>
+  <message name="listarTodoLotes">
+    <part name="parameters" element="tns:listarTodoLotes" />
+  </message>
+  <message name="listarTodoLotesResponse">
+    <part name="parameters" element="tns:listarTodoLotesResponse" />
+  </message>
+  <message name="eliminarLote">
+    <part name="parameters" element="tns:eliminarLote" />
+  </message>
+  <message name="eliminarLoteResponse">
+    <part name="parameters" element="tns:eliminarLoteResponse" />
+  </message>
+  <message name="obtenerPorIdLote">
+    <part name="parameters" element="tns:obtenerPorIdLote" />
+  </message>
+  <message name="obtenerPorIdLoteResponse">
+    <part name="parameters" element="tns:obtenerPorIdLoteResponse" />
+  </message>
+  <portType name="Lote">
+    <operation name="modificarLote">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Lote/modificarLoteRequest" message="tns:modificarLote" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Lote/modificarLoteResponse" message="tns:modificarLoteResponse" />
+    </operation>
+    <operation name="insertarLote">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Lote/insertarLoteRequest" message="tns:insertarLote" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Lote/insertarLoteResponse" message="tns:insertarLoteResponse" />
+    </operation>
+    <operation name="listarTodoLotes">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Lote/listarTodoLotesRequest" message="tns:listarTodoLotes" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Lote/listarTodoLotesResponse" message="tns:listarTodoLotesResponse" />
+    </operation>
+    <operation name="eliminarLote">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Lote/eliminarLoteRequest" message="tns:eliminarLote" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Lote/eliminarLoteResponse" message="tns:eliminarLoteResponse" />
+    </operation>
+    <operation name="obtenerPorIdLote">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/Lote/obtenerPorIdLoteRequest" message="tns:obtenerPorIdLote" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/Lote/obtenerPorIdLoteResponse" message="tns:obtenerPorIdLoteResponse" />
+    </operation>
+  </portType>
+  <binding name="LotePortBinding" type="tns:Lote">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarLote">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarLote">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodoLotes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarLote">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdLote">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Lote">
+    <port name="LotePort" binding="tns:LotePortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/Lote" />
+    </port>
+  </service>
+</definitions>

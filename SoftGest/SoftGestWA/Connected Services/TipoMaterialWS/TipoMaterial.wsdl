@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="TipoMaterial" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/TipoMaterial?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarTipoMaterial">
+    <part name="parameters" element="tns:insertarTipoMaterial" />
+  </message>
+  <message name="insertarTipoMaterialResponse">
+    <part name="parameters" element="tns:insertarTipoMaterialResponse" />
+  </message>
+  <message name="modificarTipoMaterial">
+    <part name="parameters" element="tns:modificarTipoMaterial" />
+  </message>
+  <message name="modificarTipoMaterialResponse">
+    <part name="parameters" element="tns:modificarTipoMaterialResponse" />
+  </message>
+  <message name="listarTodosTipoMaterial">
+    <part name="parameters" element="tns:listarTodosTipoMaterial" />
+  </message>
+  <message name="listarTodosTipoMaterialResponse">
+    <part name="parameters" element="tns:listarTodosTipoMaterialResponse" />
+  </message>
+  <message name="eliminarTipoMaterial">
+    <part name="parameters" element="tns:eliminarTipoMaterial" />
+  </message>
+  <message name="eliminarTipoMaterialResponse">
+    <part name="parameters" element="tns:eliminarTipoMaterialResponse" />
+  </message>
+  <message name="obtenerPorIdTipoMaterial">
+    <part name="parameters" element="tns:obtenerPorIdTipoMaterial" />
+  </message>
+  <message name="obtenerPorIdTipoMaterialResponse">
+    <part name="parameters" element="tns:obtenerPorIdTipoMaterialResponse" />
+  </message>
+  <portType name="TipoMaterial">
+    <operation name="insertarTipoMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/insertarTipoMaterialRequest" message="tns:insertarTipoMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/insertarTipoMaterialResponse" message="tns:insertarTipoMaterialResponse" />
+    </operation>
+    <operation name="modificarTipoMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/modificarTipoMaterialRequest" message="tns:modificarTipoMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/modificarTipoMaterialResponse" message="tns:modificarTipoMaterialResponse" />
+    </operation>
+    <operation name="listarTodosTipoMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/listarTodosTipoMaterialRequest" message="tns:listarTodosTipoMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/listarTodosTipoMaterialResponse" message="tns:listarTodosTipoMaterialResponse" />
+    </operation>
+    <operation name="eliminarTipoMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/eliminarTipoMaterialRequest" message="tns:eliminarTipoMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/eliminarTipoMaterialResponse" message="tns:eliminarTipoMaterialResponse" />
+    </operation>
+    <operation name="obtenerPorIdTipoMaterial">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/obtenerPorIdTipoMaterialRequest" message="tns:obtenerPorIdTipoMaterial" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/TipoMaterial/obtenerPorIdTipoMaterialResponse" message="tns:obtenerPorIdTipoMaterialResponse" />
+    </operation>
+  </portType>
+  <binding name="TipoMaterialPortBinding" type="tns:TipoMaterial">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarTipoMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTipoMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosTipoMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTipoMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdTipoMaterial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoMaterial">
+    <port name="TipoMaterialPort" binding="tns:TipoMaterialPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/TipoMaterial" />
+    </port>
+  </service>
+</definitions>

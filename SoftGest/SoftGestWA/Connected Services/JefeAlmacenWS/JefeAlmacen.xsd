@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarJefeAlmacen" type="tns:eliminarJefeAlmacen" />
+  <xs:element name="eliminarJefeAlmacenResponse" type="tns:eliminarJefeAlmacenResponse" />
+  <xs:element name="insertarJefeAlmacen" type="tns:insertarJefeAlmacen" />
+  <xs:element name="insertarJefeAlmacenResponse" type="tns:insertarJefeAlmacenResponse" />
+  <xs:element name="listarTodosJefeAlmacen" type="tns:listarTodosJefeAlmacen" />
+  <xs:element name="listarTodosJefeAlmacenResponse" type="tns:listarTodosJefeAlmacenResponse" />
+  <xs:element name="modificarJefeAlmacen" type="tns:modificarJefeAlmacen" />
+  <xs:element name="modificarJefeAlmacenResponse" type="tns:modificarJefeAlmacenResponse" />
+  <xs:element name="obtenerPorIdJefeAlmacen" type="tns:obtenerPorIdJefeAlmacen" />
+  <xs:element name="obtenerPorIdJefeAlmacenResponse" type="tns:obtenerPorIdJefeAlmacenResponse" />
+  <xs:complexType name="eliminarJefeAlmacen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idJefeAlmacen" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarJefeAlmacenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdJefeAlmacen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idJefeAlmacen" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdJefeAlmacenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:jefeAlmacenDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="jefeAlmacenDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuarioDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosJefeAlmacen">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosJefeAlmacenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:jefeAlmacenDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarJefeAlmacen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idJefeAlmacen" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarJefeAlmacenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarJefeAlmacen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarJefeAlmacenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="sexo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Masculino" />
+      <xs:enumeration value="Femenino" />
+      <xs:enumeration value="OTRO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

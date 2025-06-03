@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.softgest.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="JefeAlmacen" targetNamespace="http://services.softgest.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftGestWS/JefeAlmacen?xsd=1" namespace="http://services.softgest.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarJefeAlmacen">
+    <part name="parameters" element="tns:eliminarJefeAlmacen" />
+  </message>
+  <message name="eliminarJefeAlmacenResponse">
+    <part name="parameters" element="tns:eliminarJefeAlmacenResponse" />
+  </message>
+  <message name="modificarJefeAlmacen">
+    <part name="parameters" element="tns:modificarJefeAlmacen" />
+  </message>
+  <message name="modificarJefeAlmacenResponse">
+    <part name="parameters" element="tns:modificarJefeAlmacenResponse" />
+  </message>
+  <message name="insertarJefeAlmacen">
+    <part name="parameters" element="tns:insertarJefeAlmacen" />
+  </message>
+  <message name="insertarJefeAlmacenResponse">
+    <part name="parameters" element="tns:insertarJefeAlmacenResponse" />
+  </message>
+  <message name="obtenerPorIdJefeAlmacen">
+    <part name="parameters" element="tns:obtenerPorIdJefeAlmacen" />
+  </message>
+  <message name="obtenerPorIdJefeAlmacenResponse">
+    <part name="parameters" element="tns:obtenerPorIdJefeAlmacenResponse" />
+  </message>
+  <message name="listarTodosJefeAlmacen">
+    <part name="parameters" element="tns:listarTodosJefeAlmacen" />
+  </message>
+  <message name="listarTodosJefeAlmacenResponse">
+    <part name="parameters" element="tns:listarTodosJefeAlmacenResponse" />
+  </message>
+  <portType name="JefeAlmacen">
+    <operation name="eliminarJefeAlmacen">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/eliminarJefeAlmacenRequest" message="tns:eliminarJefeAlmacen" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/eliminarJefeAlmacenResponse" message="tns:eliminarJefeAlmacenResponse" />
+    </operation>
+    <operation name="modificarJefeAlmacen">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/modificarJefeAlmacenRequest" message="tns:modificarJefeAlmacen" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/modificarJefeAlmacenResponse" message="tns:modificarJefeAlmacenResponse" />
+    </operation>
+    <operation name="insertarJefeAlmacen">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/insertarJefeAlmacenRequest" message="tns:insertarJefeAlmacen" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/insertarJefeAlmacenResponse" message="tns:insertarJefeAlmacenResponse" />
+    </operation>
+    <operation name="obtenerPorIdJefeAlmacen">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/obtenerPorIdJefeAlmacenRequest" message="tns:obtenerPorIdJefeAlmacen" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/obtenerPorIdJefeAlmacenResponse" message="tns:obtenerPorIdJefeAlmacenResponse" />
+    </operation>
+    <operation name="listarTodosJefeAlmacen">
+      <input wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/listarTodosJefeAlmacenRequest" message="tns:listarTodosJefeAlmacen" />
+      <output wsam:Action="http://services.softgest.pucp.edu.pe/JefeAlmacen/listarTodosJefeAlmacenResponse" message="tns:listarTodosJefeAlmacenResponse" />
+    </operation>
+  </portType>
+  <binding name="JefeAlmacenPortBinding" type="tns:JefeAlmacen">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarJefeAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarJefeAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarJefeAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdJefeAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosJefeAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="JefeAlmacen">
+    <port name="JefeAlmacenPort" binding="tns:JefeAlmacenPortBinding">
+      <soap:address location="http://localhost:8080/SoftGestWS/JefeAlmacen" />
+    </port>
+  </service>
+</definitions>

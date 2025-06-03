@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\",
+  "WorkspaceRootPath": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|c:\\users\\juan\\desktop\\pucp\\2025-1\\prog3\\softgest - copia\\softgest - copia\\softgestwa\\inicio\\recuperar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:softgestwa\\inicio\\recuperar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|c:\\users\\juan\\desktop\\pucp\\2025-1\\prog3\\dentacare\\dentacare\\frontend\\softgestwa\\perfil\\perfiljefeodontologico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:softgestwa\\perfil\\perfiljefeodontologico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:SoftGestWA\\Inicio\\Recuperar.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\softgestwa\\perfil\\perfiljefeodontologico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:softgestwa\\perfil\\perfiljefeodontologico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:SoftGestWA\\Inicio\\Recuperar.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\softgestwa\\perfil\\perfilasistentemostrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:softgestwa\\perfil\\perfilasistentemostrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\styles\\RecuperarStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:SoftGestWA\\styles\\RecuperarStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\softgestwa\\perfil\\perfilasistentemostrador.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:softgestwa\\perfil\\perfilasistentemostrador.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\styles\\stylesLogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:SoftGestWA\\styles\\stylesLogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\softgestwa\\views\\asistentemostrador\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{46EBE490-D3A6-4FAE-AD2B-517A5E2136DF}|SoftGestWA\\SoftGestWA.csproj|solutionrelative:softgestwa\\views\\asistentemostrador\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,64 +38,64 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PerfilJefeOdontologico.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx.cs",
+              "RelativeDocumentMoniker": "SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx.cs",
+              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx.cs",
+              "RelativeToolTip": "SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA8wCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T04:17:06.266Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Recuperar.aspx",
-              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx",
-              "RelativeDocumentMoniker": "SoftGestWA\\Inicio\\Recuperar.aspx",
-              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx",
-              "RelativeToolTip": "SoftGestWA\\Inicio\\Recuperar.aspx",
+              "Title": "PerfilJefeOdontologico.aspx",
+              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx",
+              "RelativeDocumentMoniker": "SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx",
+              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx",
+              "RelativeToolTip": "SoftGestWA\\Perfil\\PerfilJefeOdontologico.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-28T21:09:57.641Z",
+              "WhenOpened": "2025-06-03T04:17:00.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Recuperar.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx.designer.cs",
-              "RelativeDocumentMoniker": "SoftGestWA\\Inicio\\Recuperar.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx.designer.cs",
-              "RelativeToolTip": "SoftGestWA\\Inicio\\Recuperar.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T21:11:43.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Recuperar.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx.cs",
-              "RelativeDocumentMoniker": "SoftGestWA\\Inicio\\Recuperar.aspx.cs",
-              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\Inicio\\Recuperar.aspx.cs",
-              "RelativeToolTip": "SoftGestWA\\Inicio\\Recuperar.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T21:11:34.309Z"
+              "DocumentIndex": 4,
+              "Title": "Home.aspx",
+              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Views\\AsistenteMostrador\\Home.aspx",
+              "RelativeDocumentMoniker": "SoftGestWA\\Views\\AsistenteMostrador\\Home.aspx",
+              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Views\\AsistenteMostrador\\Home.aspx",
+              "RelativeToolTip": "SoftGestWA\\Views\\AsistenteMostrador\\Home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-02T17:04:57.335Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RecuperarStyles.css",
-              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\styles\\RecuperarStyles.css",
-              "RelativeDocumentMoniker": "SoftGestWA\\styles\\RecuperarStyles.css",
-              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\styles\\RecuperarStyles.css",
-              "RelativeToolTip": "SoftGestWA\\styles\\RecuperarStyles.css",
-              "ViewState": "AgIAADcAAAAAAAAAAAAswEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-27T16:26:43.046Z"
+              "Title": "PerfilAsistenteMostrador.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx.cs",
+              "RelativeDocumentMoniker": "SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx.cs",
+              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx.cs",
+              "RelativeToolTip": "SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T16:42:12.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "stylesLogin.css",
-              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\styles\\stylesLogin.css",
-              "RelativeDocumentMoniker": "SoftGestWA\\styles\\stylesLogin.css",
-              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\SoftGest - copia\\SoftGest - copia\\SoftGestWA\\styles\\stylesLogin.css",
-              "RelativeToolTip": "SoftGestWA\\styles\\stylesLogin.css",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAswHUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-09T17:28:46.938Z"
+              "DocumentIndex": 2,
+              "Title": "PerfilAsistenteMostrador.aspx",
+              "DocumentMoniker": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx",
+              "RelativeDocumentMoniker": "SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx",
+              "ToolTip": "C:\\Users\\JUAN\\Desktop\\PUCP\\2025-1\\Prog3\\DentaCare\\DentaCare\\FrontEnd\\SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx",
+              "RelativeToolTip": "SoftGestWA\\Perfil\\PerfilAsistenteMostrador.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-02T16:41:44.179Z"
             }
           ]
         }

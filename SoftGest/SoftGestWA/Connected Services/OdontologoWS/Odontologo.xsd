@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softgest.pucp.edu.pe/" targetNamespace="http://services.softgest.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarOdontologo" type="tns:eliminarOdontologo" />
+  <xs:element name="eliminarOdontologoResponse" type="tns:eliminarOdontologoResponse" />
+  <xs:element name="insertarOdontologo" type="tns:insertarOdontologo" />
+  <xs:element name="insertarOdontologoResponse" type="tns:insertarOdontologoResponse" />
+  <xs:element name="listarTodosOdontologo" type="tns:listarTodosOdontologo" />
+  <xs:element name="listarTodosOdontologoResponse" type="tns:listarTodosOdontologoResponse" />
+  <xs:element name="modificarOdontologo" type="tns:modificarOdontologo" />
+  <xs:element name="modificarOdontologoResponse" type="tns:modificarOdontologoResponse" />
+  <xs:element name="obtenerPorIdOdontologo" type="tns:obtenerPorIdOdontologo" />
+  <xs:element name="obtenerPorIdOdontologoResponse" type="tns:obtenerPorIdOdontologoResponse" />
+  <xs:complexType name="listarTodosOdontologo">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosOdontologoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:odontologoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="odontologoDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuarioDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="especialidad" type="tns:especialidad" />
+          <xs:element minOccurs="0" name="estado" type="tns:disponibilidad" />
+          <xs:element minOccurs="0" name="turno" type="tns:turno" />
+          <xs:element minOccurs="0" name="turnoPersonal" type="tns:turnoPersonalDTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="turnoPersonalDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="tns:disponibilidad" />
+      <xs:element minOccurs="0" name="idTurnoPersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="tns:turno" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarOdontologo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idOdontologo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarOdontologoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarOdontologo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idOdontologo" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="tns:date" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="especialidad" type="tns:especialidad" />
+      <xs:element minOccurs="0" name="turno" type="tns:turno" />
+      <xs:element minOccurs="0" name="estado" type="tns:disponibilidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="modificarOdontologoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarOdontologo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="tns:date" />
+      <xs:element minOccurs="0" name="sexo" type="tns:sexo" />
+      <xs:element minOccurs="0" name="especialidad" type="tns:especialidad" />
+      <xs:element minOccurs="0" name="turno" type="tns:turno" />
+      <xs:element minOccurs="0" name="estado" type="tns:disponibilidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarOdontologoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdOdontologo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idOdontologo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdOdontologoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:odontologoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="especialidad">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ortodoncia" />
+      <xs:enumeration value="Endodoncia" />
+      <xs:enumeration value="Peridoncia" />
+      <xs:enumeration value="Implantologia" />
+      <xs:enumeration value="Radiologia" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="disponibilidad">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Disponible" />
+      <xs:enumeration value="NoDisponible" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="turno">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Mañana" />
+      <xs:enumeration value="Tarde" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sexo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Masculino" />
+      <xs:enumeration value="Femenino" />
+      <xs:enumeration value="OTRO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
